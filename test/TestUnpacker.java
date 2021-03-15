@@ -12,8 +12,7 @@ public class TestUnpacker {
     @Parameterized.Parameters
     public static Collection<Object[]> data() {
         return Arrays.asList(new Object[][]{
-                {"3[xyz]4[xy]z", "xyzxyzxyzxyxyxyxyz"},
-                {"2[3[x]y]", "xxxyxxxy"},
+                {"2[e1[2[ty]]]","etytyetyty"},
                 {"a3[x2[bc]yz]4[kt]z", "axbcbcyzxbcbcyzxbcbcyzktktktktz"},
                 {"2[f]","ff"},
                 {"1[x]3[yz]","xyzyzyz"},
